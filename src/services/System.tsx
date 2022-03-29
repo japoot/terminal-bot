@@ -1,0 +1,20 @@
+import SYSTEM_RESPONSES from '../data/system_responses';
+
+// Return array of [status, system response]
+export default function processCommand(cmd: string): [number, string] {
+  // FIXME: santize user input
+  let status = 0;
+  let response = '';
+
+  // FIXME: "mkdir Downloads" is not being found, look into how to handle cmd with mixed casing
+  // FIXME: SYSTEM_RESPONSES not able to index cmd because cmd = string
+  if (cmd in SYSTEM_RESPONSES) {
+    status = SYSTEM_RESPONSES[cmd].status;
+    response = SYSTEM_RESPONSES[cmd].result.join(' ');
+  } else {
+    status = 0;
+    response = "Sorry, I don't understand.";
+  }
+
+  return [status, response];
+}
