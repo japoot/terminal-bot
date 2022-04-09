@@ -7,7 +7,6 @@ export default function processCommand(cmd: string): [number, string] {
   let response = '';
 
   // FIXME: "mkdir Downloads" is not being found, look into how to handle cmd with mixed casing
-  // FIXME: SYSTEM_RESPONSES not able to index cmd because cmd = string
   if (cmd in SYSTEM_RESPONSES) {
     status = SYSTEM_RESPONSES[cmd].status;
     response = SYSTEM_RESPONSES[cmd].result.join(' ');

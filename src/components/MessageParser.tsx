@@ -1,16 +1,15 @@
+import ActionProvider from './ActionProvider';
+
 class MessageParser {
-  actionProvider: any;
-
-  state: any;
-
-  constructor(actionProvider: any, state: any) {
+  constructor(actionProvider) {
     this.actionProvider = actionProvider;
-    this.state = state;
+    // this.state = state;
   }
 
-  // eslint-disable-next-line class-methods-use-this
-  parse(message: string) {
-    console.log(message);
+  parse(message) {
+    const lowercase = message.toLowerCase();
+    this.actionProvider.respond(lowercase);
   }
 }
+
 export default MessageParser;
