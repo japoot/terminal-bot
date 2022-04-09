@@ -1,13 +1,9 @@
 {
-  "name": "electron-react-boilerplate",
+  "name": "terminal-chat",
   "version": "4.5.0",
-  "description": "A foundation for scalable desktop apps",
+  "description": "An alternative to the command shell. Chat with your computer to get things done.",
   "main": "./dist/main/main.js",
-  "author": {
-    "name": "Electron React Boilerplate Maintainers",
-    "email": "electronreactboilerplate@gmail.com",
-    "url": "https://github.com/electron-react-boilerplate"
-  },
+  "author": "Japoot <invalid@invalid>",
   "scripts": {
     "electron-rebuild": "node -r ts-node/register ../../.erb/scripts/electron-rebuild.js",
     "link-modules": "node -r ts-node/register ../../.erb/scripts/link-modules.ts",
