@@ -1,5 +1,14 @@
 module.exports = {
-  extends: 'erb',
+  extends: [
+    "erb",
+    "airbnb/hooks",
+    "airbnb-typescript",
+    "eslint:recommended",
+    "plugin:jest/recommended",
+    "plugin:prettier/recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+  ],
   rules: {
     // A temporary hack related to IDE not resolving correct package.json
     "import/no-extraneous-dependencies": "off",
