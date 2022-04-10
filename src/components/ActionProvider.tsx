@@ -3,14 +3,19 @@ import { createChatBotMessage } from 'react-chatbot-kit';
 import processCommand from '../services/System';
 
 class ActionProvider {
-  constructor(createChatbotMessage, setStateFunc) {
+  createChatbotMessage: string;
+  setState: any; // FIXME: figure out proper type
+
+  // FIXME: figure out proper type
+  constructor(createChatbotMessage: any, setStateFunc: any) {
     this.createChatbotMessage = createChatbotMessage;
 
     this.setState = setStateFunc;
   }
 
-  respond(userInput) {
-    let message = '';
+  // FIXME: figure out proper type
+  respond(userInput: any) {
+    let message: any = ""; // FIXME: figure out proper type
 
     // FIXME: santize user input
     const response = processCommand(userInput)[1];
@@ -18,8 +23,9 @@ class ActionProvider {
     this.addMessageToState(message);
   }
 
-  addMessageToState = (message) => {
-    this.setState((prevState) => ({
+  addMessageToState = (message: string) => {
+    // FIXME: figure out proper type
+    this.setState((prevState: any) => ({
       ...prevState,
       messages: [...prevState.messages, message],
     }));

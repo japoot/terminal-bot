@@ -5,7 +5,7 @@ contextBridge.exposeInMainWorld('electron', {
     myPing() {
       ipcRenderer.send('ipc-example', 'ping');
     },
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    // FIXME: figure out proper type
     on(channel: string, func: (...args: any[]) => void) {
       const validChannels = ['ipc-example'];
       if (validChannels.includes(channel)) {
@@ -13,7 +13,7 @@ contextBridge.exposeInMainWorld('electron', {
         ipcRenderer.on(channel, (_event, ...args) => func(...args));
       }
     },
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    // FIXME: figure out proper type
     once(channel: string, func: (...args: any[]) => void) {
       const validChannels = ['ipc-example'];
       if (validChannels.includes(channel)) {

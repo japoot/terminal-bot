@@ -1,7 +1,9 @@
-import SYSTEM_RESPONSES from '../data/system_responses';
+import SYSTEM_RESPONSES, { systemReponses } from "../data/system_responses";
 
 // Return array of [status, system response]
-export default function processCommand(cmd: string): [number, string] {
+export default function processCommand(
+  cmd: keyof systemReponses,
+): [number, string] {
   // FIXME: santize user input
   let status = 0;
   let response = '';

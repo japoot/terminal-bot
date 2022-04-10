@@ -1,12 +1,13 @@
-import ActionProvider from './ActionProvider';
-
 class MessageParser {
-  constructor(actionProvider) {
+  actionProvider: any; // FIXME: figure out proper type
+
+  // FIXME: figure out proper type
+  constructor(actionProvider: any) {
     this.actionProvider = actionProvider;
-    // this.state = state;
   }
 
-  parse(message) {
+  // FIXME: figure out proper type
+  parse(message: any) {
     const lowercase = message.toLowerCase();
     this.actionProvider.respond(lowercase);
   }

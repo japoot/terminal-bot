@@ -3,9 +3,9 @@ declare global {
     electron: {
       ipcRenderer: {
         myPing(): void;
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        // FIXME: figure out proper type
         on(channel: string, func: (...args: any[]) => void): void;
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        // FIXME: figure out proper type
         once(channel: string, func: (...args: any[]) => void): void;
       };
     };
