@@ -1,6 +1,6 @@
-import { createChatBotMessage } from 'react-chatbot-kit';
+import { createChatBotMessage } from "react-chatbot-kit";
 
-import processCommand from '../services/System';
+import processCommand from "../services/System";
 
 class ActionProvider {
   createChatbotMessage: string;

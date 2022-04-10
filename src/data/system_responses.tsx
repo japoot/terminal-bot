@@ -11,21 +11,21 @@ export interface systemReponsesCmd {
 
 const SYSTEM_RESPONSES = {
   ls: {
-    result: ['Desktop', 'Downloads', 'hello.txt'],
+    result: ["Desktop", "Downloads", "hello.txt"],
     status: 0,
   },
   pwd: {
-    result: ['/Users/japoot'],
+    result: ["/Users/japoot"],
     status: 0,
   },
 
-  'mkdir chat': {
-    result: [''],
+  "mkdir chat": {
+    result: [""],
     status: 0,
   },
 
-  'mkdir Downloads': {
-    result: ['Directoy already exists.'],
+  "mkdir Downloads": {
+    result: ["Directoy already exists."],
     status: 1,
   },
 };
