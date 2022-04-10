@@ -19,7 +19,7 @@ class ActionProvider {
 
     // FIXME: santize user input
     const response = processCommand(userInput)[1];
-    message = createChatBotMessage(response);
+    message = createChatBotMessage(response, null);
     this.addMessageToState(message);
   }
 
