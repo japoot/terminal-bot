@@ -18,7 +18,7 @@ class ActionProvider {
     let message: any = ""; // FIXME: figure out proper type
 
     // FIXME: santize user input
-    const response = processCommand(userInput)[1];
+    const response = processCommand(userInput)[1]
     message = createChatBotMessage(response, null);
     this.addMessageToState(message);
   }
