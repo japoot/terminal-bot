@@ -16,6 +16,12 @@ module.exports = {
     // Since React 17 and typescript 4.1 you can safely disable the rule
     "react/react-in-jsx-scope": "off",
   },
+  overrides: [
+    {
+      files: ["package.json", "package-lock.json"],
+      rules: { "@typescript-eslint/no-unused-expressions": "off" },
+    },
+  ],
   parserOptions: {
     ecmaVersion: 2020,
     sourceType: "module",
