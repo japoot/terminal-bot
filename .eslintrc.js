@@ -5,9 +5,9 @@ module.exports = {
     "airbnb-typescript",
     "eslint:recommended",
     "plugin:jest/recommended",
-    "plugin:prettier/recommended",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
   ],
   rules: {
     // A temporary hack related to IDE not resolving correct package.json
