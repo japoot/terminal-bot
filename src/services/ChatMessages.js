@@ -1,18 +1,18 @@
-import { createChatBotMessage } from 'react-chatbot-kit';
+import { createChatBotMessage } from "react-chatbot-kit";
 
 const config = {
-  botName: 'TerminalBot',
-  initialMessages: [
-    createChatBotMessage(
-      `Hi, I'm japoot. Enter command (supported: "ls", "mkdir chat", "mkdir Downloads", "pwd") >`
-    ),
-  ],
+  botName: "Terminal Bot",
+  initialMessages: [createChatBotMessage(`Hi, I'm Terminal Bot`)],
+
+  // Defines an object of custom styles if you want to override styles
   customStyles: {
+    // Overrides the chatbot message styles
     botMessageBox: {
-      backgroundColor: '#376B7E',
+      backgroundColor: "#092878",
     },
+    // Overrides the chat button styles
     chatButton: {
-      backgroundColor: '#376B7E',
+      backgroundColor: "#EDEDED",
     },
   },
 };
