@@ -1,4 +1,18 @@
 {
   "singleQuote": false,
-  "trailingComma": "all"
+  "trailingComma": "all",
+  "overrides": [
+    {
+      "files": "*.json,.{eslintrc,prettierrc}",
+      "options": {
+        "parser": "json"
+      }
+    },
+    {
+      "files": "*.{css,scss,html,md,yml}",
+      "options": {
+        "singleQuote": true
+      }
+    }
+  ]
 }
