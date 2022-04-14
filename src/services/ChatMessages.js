@@ -1,18 +1,18 @@
-import { createChatBotMessage } from 'react-chatbot-kit';
+import { createChatBotMessage } from "react-chatbot-kit";
 
 const config = {
-  botName: 'TerminalBot',
+  botName: "TerminalBot",
   initialMessages: [
     createChatBotMessage(
-      `Hi, I'm japoot. Enter command (supported: "ls", "mkdir chat", "mkdir Downloads", "pwd") >`
+      `Hi, I'm japoot. Enter command (supported: "ls", "mkdir chat", "mkdir Downloads", "pwd") >`,
     ),
   ],
   customStyles: {
     botMessageBox: {
-      backgroundColor: '#376B7E',
+      backgroundColor: "#376B7E",
     },
     chatButton: {
-      backgroundColor: '#376B7E',
+      backgroundColor: "#376B7E",
     },
   },
 };
